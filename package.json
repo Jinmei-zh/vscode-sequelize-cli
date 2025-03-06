@@ -1,0 +1,130 @@
+{
+  "name": "sequelize-cli-command",
+  "displayName": "Sequelize Cli Command",
+  "description": "Run Sequelize Cli commands from within Visual Studio Code.",
+  "version": "0.0.1",
+  "publisher": "jinmei5216@163.com",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/package.json"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sequelize-cli.db:migrate",
+        "title": "Sequelize Db Migrate"
+      },
+      {
+        "command": "sequelize-cli.db:migrate:schema:timestamps:add",
+        "title": "Sequelize Db Migrate Schema Timestamps Add"
+      },
+      {
+        "command": "sequelize-cli.db:migrate:status",
+        "title": "Sequelize Db Migrate Status"
+      },
+      {
+        "command": "sequelize-cli.db:migrate:undo",
+        "title": "Sequelize Db Migrate Undo"
+      },
+      {
+        "command": "sequelize-cli.db:migrate:undo:all",
+        "title": "Sequelize Db Migrate Undo All"
+      },
+      {
+        "command": "sequelize-cli.db:migrate:fresh",
+        "title": "Sequelize DB Migrate Fresh"
+      },
+      {
+        "command": "sequelize-cli.db:seed",
+        "title": "Sequelize Db Seed"
+      },
+      {
+        "command": "sequelize-cli.db:seed:undo",
+        "title": "Sequelize Db Seed Undo"
+      },
+      {
+        "command": "sequelize-cli.db:seed:all",
+        "title": "Sequelize Db Seed All"
+      },
+      {
+        "command": "sequelize-cli.db:seed:undo:all",
+        "title": "Sequelize Db Seed Undo All"
+      },
+      {
+        "command": "sequelize-cli.db:create",
+        "title": "Sequelize Db Create"
+      },
+      {
+        "command": "sequelize-cli.db:drop",
+        "title": "Sequelize Db Drop"
+      },
+      {
+        "command": "sequelize-cli.init",
+        "title": "Sequelize Init"
+      },
+      {
+        "command": "sequelize-cli.init:config",
+        "title": "Sequelize Init Config"
+      },
+      {
+        "command": "sequelize-cli.init:migrations",
+        "title": "Sequelize Init Migrations"
+      },
+      {
+        "command": "sequelize-cli.init:models",
+        "title": "Sequelize Init Models"
+      },
+      {
+        "command": "sequelize-cli.init:seeders",
+        "title": "Sequelize Init Seeders"
+      },
+      {
+        "command": "sequelize-cli.migration:generate",
+        "title": "Sequelize Migration Generate"
+      },
+      {
+        "command": "sequelize-cli.model:generate",
+        "title": "Sequelize Model Generate"
+      },
+      {
+        "command": "sequelize-cli.seed:generate",
+        "title": "Sequelize Seed Generate"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.21.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "sequelize-cli": "^6.6.2",
+    "sequelize-cli-command": "file:"
+  }
+}
