@@ -1,0 +1,85 @@
+[
+  {
+    "command": "sequelize-cli.db:migrate",
+    "title": "Sequelize Db Migrate",
+    "args": []
+  },
+  {
+    "command": "sequelize-cli.db:migrate:schema:timestamps:add",
+    "title": "Sequelize Db Migrate Schema Timestamps Add"
+  },
+  {
+    "command": "sequelize-cli.db:migrate:status",
+    "title": "Sequelize Db Migrate Status"
+  },
+  {
+    "command": "sequelize-cli.db:migrate:undo",
+    "title": "Sequelize Db Migrate Undo"
+  },
+  {
+    "command": "sequelize-cli.db:migrate:undo:all",
+    "title": "Sequelize Db Migrate Undo All"
+  },
+  {
+    "command": "sequelize-cli.db:migrate:fresh",
+    "title": "Sequelize DB Migrate Fresh"
+  },
+  {
+    "command": "sequelize-cli.db:seed",
+    "title": "Sequelize Db Seed",
+    "args": ["--seed"],
+    "options": []
+  },
+  {
+    "command": "sequelize-cli.db:seed:undo",
+    "title": "Sequelize Db Seed Undo"
+  },
+  {
+    "command": "sequelize-cli.db:seed:all",
+    "title": "Sequelize Db Seed All"
+  },
+  {
+    "command": "sequelize-cli.db:seed:undo:all",
+    "title": "Sequelize Db Seed Undo All"
+  },
+  {
+    "command": "sequelize-cli.db:create",
+    "title": "Sequelize Db Create"
+  },
+  {
+    "command": "sequelize-cli.db:drop",
+    "title": "Sequelize Db Drop"
+  },
+  {
+    "command": "sequelize-cli.init",
+    "title": "Sequelize Init"
+  },
+  {
+    "command": "sequelize-cli.init:config",
+    "title": "Sequelize Init Config"
+  },
+  {
+    "command": "sequelize-cli.init:migrations",
+    "title": "Sequelize Init Migrations"
+  },
+  {
+    "command": "sequelize-cli.init:models",
+    "title": "Sequelize Init Models"
+  },
+  {
+    "command": "sequelize-cli.init:seeders",
+    "title": "Sequelize Init Seeders"
+  },
+  {
+    "command": "sequelize-cli.migration:generate",
+    "title": "Sequelize Migration Generate"
+  },
+  {
+    "command": "sequelize-cli.model:generate",
+    "title": "Sequelize Model Generate"
+  },
+  {
+    "command": "sequelize-cli.seed:generate",
+    "title": "Sequelize Seed Generate"
+  }
+]

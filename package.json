@@ -2,13 +2,19 @@
   "name": "sequelize-cli-command",
   "displayName": "Sequelize Cli Command",
   "description": "Run Sequelize Cli commands from within Visual Studio Code.",
-  "version": "0.0.1",
-  "publisher": "jinmei5216@163.com",
+  "version": "0.0.3",
+  "publisher": "jinmei",
+  "author": "Jinmei-zh",
   "engines": {
     "vscode": "^1.98.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "command",
+    "sequelize cli",
+    "node"
   ],
   "activationEvents": [
     "workspaceContains:**/package.json"
@@ -18,7 +24,8 @@
     "commands": [
       {
         "command": "sequelize-cli.db:migrate",
-        "title": "Sequelize Db Migrate"
+        "title": "Sequelize Db Migrate",
+        "args": []
       },
       {
         "command": "sequelize-cli.db:migrate:schema:timestamps:add",
@@ -42,7 +49,11 @@
       },
       {
         "command": "sequelize-cli.db:seed",
-        "title": "Sequelize Db Seed"
+        "title": "Sequelize Db Seed",
+        "args": [
+          "--seed"
+        ],
+        "options": []
       },
       {
         "command": "sequelize-cli.db:seed:undo",
@@ -98,6 +109,7 @@
       }
     ]
   },
+  "icon": "icon.png",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
@@ -126,5 +138,9 @@
   "dependencies": {
     "sequelize-cli": "^6.6.2",
     "sequelize-cli-command": "file:"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jinmei-zh/vscode-sequelize-cli"
   }
 }
