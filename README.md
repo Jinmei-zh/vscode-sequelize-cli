@@ -8,4 +8,8 @@ Run Sequelize Cli commands from within Visual Studio Code.
 - Run Custom Commands
 - Manage the database
 
+## Seed Generate
+
+![Seed Generate](./seed.gif)
+
 ## Requirements
